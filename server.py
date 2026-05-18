@@ -4,7 +4,7 @@
 import json, os, smtplib, ssl
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
-from mcp.server import Server, stdio_server
+from mcp.server.lowlevel import Server, stdio_server
 import httpx
 
 server = Server("notification-mcp")
